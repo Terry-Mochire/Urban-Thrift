@@ -1,0 +1,2 @@
+# Urban-Thrift
+Kenya being a developing country, most people tend to shop for second hand clothing. Time is a limiting factor thus marking it hard for them to move from one place to another searching for this and comparing prices of products before they buy. Our site will allow users to shop online and access a variety of products at their own convenience. This site will also help them save time since it won't be necessary for them to go to the market place physically. On the sellers end, this will help to improve sales.
