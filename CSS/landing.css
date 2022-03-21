@@ -1,0 +1,9 @@
+/* Style the Navbar */
+#logo1, #logo2, #logo3{
+    border-right: 1px solid black;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#logo4{
+    padding-left: 2%;
+}
