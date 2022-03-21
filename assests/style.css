@@ -1,7 +1,50 @@
-/* .card{
-    height: 500px;
-} */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    text-align: center;
+}
+.dress{
+    /* background-color: #7660EB; */
+    background-color: #9D8DF1;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.jumpsuit{
+    background-color: #C2B8F6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.tops{
+    /* background-color: #7660EB; */
+    background-color: #9D8DF1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.trousers{
+    background-color: #C2B8F6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.skirts{
+    background-color: #9D8DF1;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
 
 .card img{
     height:400px;
+}
+.card-img-top{
+    background-color: #E9E5FC;
+}
+
+.row{
+    margin: 20px;
 }
