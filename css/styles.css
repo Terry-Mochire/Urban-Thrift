@@ -15,6 +15,10 @@ label.logo{
     padding: 0 100px;
 }
 
+.nav ul li a{
+    text-decoration: none;
+}
+
 
 
 nav ul{
@@ -43,17 +47,27 @@ a.active,a:hover{
 
 .card-img-top{
     background-color: #E9E5FC;
+    height: 400px;
+    
 }
 
 #trousers, #shorts{
     background-color:#9D8DF1 ;
+
 }
 
 #shirts{
     background-color:#C2B8F6;
 
 }
+.btn{
+    background-color: #C2B8F6;
+}
 
-.card-img-top{
-    height: 400px;
+.card{
+    margin-top: 30px;
+}
+
+.men-trousers, .men-shorts{
+    background-color: #9D8DF1;
 }
