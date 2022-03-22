@@ -7,3 +7,18 @@
  h1, h2{
      text-align: center;
  }
+
+ .card-img-top{
+     background-color: #E9E5FC;
+ }
+ .female-clothe{
+     background-color: #9D8DF1;
+ }
+.male-clothes{
+    background-color: #C2B8F6;
+}
+/* body{
+    background-color: #9D8DF1;
+} */
+
+ 
