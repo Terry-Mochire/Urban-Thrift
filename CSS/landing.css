@@ -1,0 +1,39 @@
+/* Style the Navbar */
+#logo1, #logo2, #logo3{
+    border-right: 1px solid black;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#logo4{
+    padding-left: 2%;
+}
+#brandlogo {
+    padding-right: 25%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
+
+/* Style the Carousel */
+.carousel-item img {
+    height: 100vh;
+    width: 100vw;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: 100% 100%;
+    height: 100vh;
+    max-width: 100vw;
+}
+.carousel-caption h1{
+    padding-top: 40%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: xx-large;
+}
+.carousel-caption p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Style Footer */
+.footer {
+    background-color: #9D8DF1;
+}

@@ -1,0 +1,40 @@
+body {
+    background-color: #E9E5FC;
+}
+.container {
+    box-shadow: 10px 10px 5px rgb(22, 22, 21) ;
+}
+.signinContent {
+    margin-top: 10%;
+}
+.welcome {
+    background-color: #C2B8F6;
+    background-size: 100% 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.mb-3 {
+    display: flex;
+    justify-content: center;
+}
+.mb-3 button {
+    background-color: #9D8DF1;
+}
+.form {
+    border-left: 1px solid black;
+    background-color: white;
+}
+.welcome h1 {
+    font-family: 'Quicksand', sans-serif;
+}
