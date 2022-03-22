@@ -1,0 +1,15 @@
+.imgcontainer {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.mb-3 {
+    display: flex;
+    justify-content: center;
+}
+
