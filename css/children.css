@@ -1,0 +1,38 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card img{
+    height: 400px;
+    
+}
+ h1, h2{
+     text-align: center;
+ }
+
+ .card-img-top{
+     background-color: #E9E5FC;
+ }
+ .female-clothe, .females {
+     background-color: #9D8DF1;
+ }
+.male-clothes{
+    background-color: #C2B8F6;
+}
+
+ .btn{
+    background-color: #9D8DF1;
+}
+p{
+    font-size: medium;
+}
+#girls,.male-clothes{
+    margin-top: 50px;
+}
+body{
+    background-color: #C2B8F6;
+}
+
+
+ 
