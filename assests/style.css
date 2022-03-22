@@ -6,6 +6,18 @@ h1{
     text-align: center;
 }
 
+.btn{
+    background-color: #9D8DF1;
+}
+/* .logo{
+    height: 10px;
+    width: 10px;
+} */
+
+.card-body{
+    text-align: center;
+}
+
 .bgColor{
     background-color: #9D8DF1;
 }
@@ -56,4 +68,10 @@ h1{
 
 .row{
     margin: 20px;
+}
+
+.cardLinks{
+    
+    display: flex;
+    justify-content: space-between;
 }
