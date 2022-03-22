@@ -1,4 +1,7 @@
-
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
 
 .card img{
     height: 400px;
@@ -18,7 +21,7 @@
     background-color: #C2B8F6;
 }
 
-.container-fluid, .btn{
+ .btn{
     background-color: #9D8DF1;
 }
 p{
