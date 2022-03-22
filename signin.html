@@ -12,32 +12,44 @@
   </head>
   <body>
     <div class="container">
-        <div class="imgcontainer"><img src="./ASSETS/Logo/URBAN.png" alt="Brand logo" style="width: 150px;"></div>
-        <h1>Sign In</h1>
-        <form>
-            <div class="mb-3">
-              <div class="content">
-                <label for="InputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" placeholder="Email Address" id="InputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-              </div>
-            </div>
-            <div class="mb-3">
-                <div class="content">
-                    <label for="InputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" placeholder="Password" id="InputPassword1">
+        <div class="signinContent">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <h1>Welcome to Urban Thrift</h1>
+                        <p>To keep connected with us please sign in with your personal info</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="imgcontainer"><img src="./ASSETS/Logo/URBAN.png" alt="Brand logo" style="width: 150px;"></div>
+                    <h1>Sign In</h1>
+                    <form>
+                        <div class="mb-3">
+                          <div class="content">
+                            <label for="InputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="Email Address" id="InputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="content">
+                                <label for="InputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" placeholder="Password" id="InputPassword1">
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <div class="content">
+                            <input type="checkbox" class="form-check-input" id="Check1">
+                            <label class="form-check-label" for="Check1">Remember Me</label>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="mb-3 form-check">
-              <div class="content">
-                <input type="checkbox" class="form-check-input" id="Check1">
-                <label class="form-check-label" for="Check1">Remember Me</label>
-              </div>
-            </div>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Sign In</button>
-            </div>
-          </form>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
