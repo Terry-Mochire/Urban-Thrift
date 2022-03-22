@@ -7,6 +7,11 @@
 #logo4{
     padding-left: 2%;
 }
+#brandlogo {
+    padding-right: 25%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
 
 /* Style the Carousel */
 .carousel-item img {
@@ -21,7 +26,11 @@
 }
 .carousel-caption h1{
     padding-top: 40%;
+    font-family: 'Quicksand', sans-serif;
     font-size: xx-large;
+}
+.carousel-caption p{
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* Style Footer */
