@@ -44,3 +44,16 @@ a.active,a:hover{
 .card-img-top{
     background-color: #E9E5FC;
 }
+
+#trousers, #shorts{
+    background-color:#9D8DF1 ;
+}
+
+#shirts{
+    background-color:#C2B8F6;
+
+}
+
+.card-img-top{
+    height: 400px;
+}
