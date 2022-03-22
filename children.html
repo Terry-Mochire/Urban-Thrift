@@ -14,45 +14,67 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/landing.css">
     <link rel="stylesheet" href="./css/children.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <script src="./js/children.js"></script>
     <title>Urban-Thrift</title>
 </head>
 
 <body>
-    <div class="container-fluid" >
-
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/icon2.png" alt="" widith="50px" height="50px">
-                    </a>
-
-                    <a class="navbar-brand" href="#">Urban-Thrift</a>
-
-                </nav>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <div class="d-flex">
-                            <a class="nav-link active" aria-current="page" href="landing.html">Home</a>
-                            <a class="nav-link" href="#girls">Girls</a>
-                            <a class="nav-link" href="#boys">Boys</a>
-                        </div>
-
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./ASSETS/Logo/URBAN.png" alt="" style="width: 100px; height: 100px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="landing.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Women's</a></li>
+                  <li><a class="dropdown-item" href="#">Men's</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="children.html">Children's</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactUs">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex" id="brandlogo">
+              <h3> URBAN THRIFT</h3>
             </div>
-        </nav>
+            <div class="d-flex" id="logo1">
+              <img src="./ASSETS/Logo/search.png" alt="search logo" style="width: 20px;">
+            </div>
+            <div class="d-flex" id="logo2">
+              <img src="./ASSETS/Logo/heart.png" alt="like logo" style="width: 20px;" >
+            </div>
+            <div class="d-flex"  id="logo3">
+              <a href="signin.html">
+                <img src="./ASSETS/Logo/user.png" alt="sign in logo" style="width: 20px;">
+              </a>
+            </div>
+            <div class="d-flex" id="logo4">
+              <a href="cart.html">
+                <img src="./ASSETS/Logo/shopping-cart.png" alt="cart logo" style="width: 20px;">
+                <span id="cart"> 0 </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
     <!-- end of navbar -->
     <div class="females">
@@ -98,7 +120,7 @@
                             <h5 class="card-title" id="name">Dress for girls.</h5>
                             <p class="card-text">Flexible dress, color pink and cyan. Size: M </p>
                             <p id="price">1500</p>
-                            <a href="#" class="btn btn-primary" id="buy">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart" id="buy">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -114,7 +136,7 @@
                             <h5 class="card-title" id="name">Dress for girls.</h5>
                             <p class="card-text">Red dress and flexible. Size: SM</p>
                             <p id="price">1300</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
 
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
@@ -132,7 +154,7 @@
                             <h5 class="card-title">Dress for girls.</h5>
                             <p class="card-text">Flexible pink dress. Size: M </p>
                             <p id="price">1800</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -151,7 +173,7 @@
                             <h5 class="card-title">Dress for girls.</h5>
                             <p class="card-text">Checked black and white dress. Size: L</p>
                             <p id="price">2000</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -167,7 +189,7 @@
                             <h5 class="card-title">Jamsuite for girls.</h5>
                             <p class="card-text">Color orange. Size: M</p>
                             <p id="price">1200</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -182,7 +204,7 @@
                             <h5 class="card-title">Dress for girls</h5>
                             <p class="card-text">Flexible round color blue thick. Size: L</p>
                             <p id="price">2000</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -203,7 +225,7 @@
                             <h5 class="card-title">Flower dress for girls</h5>
                             <p class="card-text">Cotton dress for girls. Size: XL</p>
                             <p id="price">1000</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -218,7 +240,7 @@
                             <h5 class="card-title">Dress for girls.</h5>
                             <p class="card-text">Red dress for girls. Size: SM</p>
                             <p id="price">800</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -233,7 +255,7 @@
                             <h5 class="card-title">Dress for girls</h5>
                             <p class="card-text">Round flexible maroon and black dress. Size:XL</p>
                             <p id="price">1999</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -254,7 +276,7 @@
                         <h5 class="card-title">Dress for girls.</h5>
                         <p class="card-text">Black dress. Size: L</p>
                         <p id="price">700</p>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <a href="#" class="btn btn-primary add-cart">Buy now</a>
                         <button style="float: right; background-color: #9D8DF1;">
                             <img src="./images/shopping-cart.png" alt=""
                                 style="width: 20px; height: 20px;">
@@ -270,7 +292,7 @@
                         <h5 class="card-title">White dress for girls</h5>
                         <p class="card-text">White flexible dress. Size:XL</p>
                         <p id="price">1500</p>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <a href="#" class="btn btn-primary add-cart">Buy now</a>
                         <button style="float: right; background-color: #9D8DF1;">
                             <img src="./images/shopping-cart.png" alt=""
                                 style="width: 20px; height: 20px;">
@@ -285,7 +307,7 @@
                         <h5 class="card-title">Dress for girls.</h5>
                         <p class="card-text">Flower dress. Size: SM</p>
                         <p id="price">600</p>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <a href="#" class="btn btn-primary add-cart">Buy now</a>
                         <button style="float: right; background-color: #9D8DF1;">
                             <img src="./images/shopping-cart.png" alt=""
                                 style="width: 20px; height: 20px;">
@@ -310,7 +332,7 @@
                             <h5 class="card-title">Boys suite.</h5>
                             <p class="card-text">Three piece jeans suite colour blue.Size: XL</p>
                             <p id="price">2500</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -325,7 +347,7 @@
                             <h5 class="card-title">T-shirt for boys.</h5>
                             <p class="card-text">Cotton t-shirt. Size: L</p>
                             <p id="price">500</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -340,7 +362,7 @@
                             <h5 class="card-title">Three piece clothe for boys.</h5>
                             <p class="card-text">Three piece clothe with a cape, color grey. Size: SM</p>
                             <p id="price">1200</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -359,7 +381,7 @@
                             <h5 class="card-title">Winter jaccket for boys.</h5>
                             <p class="card-text">Winter jacket woolen black. Size: XL </p>
                             <p id="price">1500</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -374,7 +396,7 @@
                             <h5 class="card-title">Two piece clothe for boys.</h5>
                             <p class="card-text">Cotton clothing. Size: L</p>
                             <p id="price">2000</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -389,7 +411,7 @@
                             <h5 class="card-title">Boy trouser.</h5>
                             <p class="card-text">Blue trouser. Size: XL</p>
                             <p id="price">800</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -408,7 +430,7 @@
                             <h5 class="card-title">Skyblue color clothe for boys.</h5>
                             <p class="card-text">Cotton clothe. Size: SM</p>
                             <p id="price">800</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -423,7 +445,7 @@
                             <h5 class="card-title">Suite for boys.</h5>
                             <p class="card-text">Chinese suite. Size: L </p>
                             <p id="price">2000</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
@@ -438,7 +460,7 @@
                             <h5 class="card-title">Shorts for boys.</h5>
                             <p class="card-text">Geans shorts and cotton t-shirts for boys. Size: SM</p>
                             <p id="price">1800</p>
-                            <a href="#" class="btn btn-primary">Buy now</a>
+                            <a href="#" class="btn btn-primary add-cart">Buy now</a>
                             <button style="float: right; background-color: #9D8DF1;">
                                 <img src="./images/shopping-cart.png" alt=""
                                     style="width: 20px; height: 20px;">
