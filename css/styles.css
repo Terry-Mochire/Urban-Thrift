@@ -40,10 +40,10 @@ nav ul li a{
     text-transform: uppercase;
 } */
 
-a.active,a:hover{
+/* a.active,a:hover{
     background: blueviolet;
     transition: .5s;
-}   
+}    */
 
 .card-img-top{
     background-color: #E9E5FC;
