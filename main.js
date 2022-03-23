@@ -37,7 +37,7 @@ $(document).ready(function () {
                 let productNumbers = parseInt(localStorage.getItem('cartnumbers'));
                 if (productNumbers) {
                 localStorage.setItem('cartnumbers', productNumbers += 1);
-                document.querySelector('.d-flex span').textContent = productNumbers + 1;
+                document.querySelector('.d-flex span').textContent = productNumbers += 1;
                 } else {
                 localStorage.setItem('cartnumbers', 1);
                 document.querySelector('.d-flex span').textContent = 1;
@@ -79,14 +79,14 @@ $(document).ready(function () {
             if(productNumbers) {
             document.querySelector('.d-flex span').textContent = productNumbers;
         };
-        onLoadCartNumbers()
+       
 
         //User Interface
 
         
     };
 
-
+    onLoadCartNumbers()
  
 };
 });
