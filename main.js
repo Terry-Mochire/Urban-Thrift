@@ -57,16 +57,16 @@ $(document).ready(function () {
                 }
             } addedtoCart(products[index]);
 
-            function addedtoCart(product) {
+            function addedtoCart(products) {
                 console.log(selectedClothingItem);
 
-                product.inCart = 1; 
-                localStorage.setItem('addedtoCart', JSON.stringify(products));
+                selectedClothingItem.inCart = 1; 
+                localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
                 
                 if(addedtoCart != null) {
-                    localStorage.setItem('addedtoCart', JSON.stringify(products));
+                    localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
                 } else {
-                    localStorage.setItem('addedtoCart', JSON.stringify(products));
+                    localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
                 }
 
                 
@@ -98,7 +98,13 @@ function displayCart() {
     document.getElementById('selectedtitle').innerHTML = cartItems.name;
     document.getElementById('selectedprice').innerHTML = cartItems.price;
     document.getElementById('selectedquantity').innerHTML = cartItems.inCart;
-
+    document.getElementById('selectedtotal').innerHTML = cartItems.price;
 
 }displayCart()
+
+$('#placeorder').click(function(event) {
+        event.preventDefault;
+        alert("We have received your order. Please await confirmation.")
+})
+
 });
