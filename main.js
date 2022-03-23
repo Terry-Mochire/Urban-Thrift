@@ -17,7 +17,7 @@ $(document).ready(function () {
             function clothingItem(name, price, inCart) {
                 this.name = name;
                 this.price = price;
-                this.inCart = 1;
+                this.inCart = 0;
             };
             
             
@@ -32,7 +32,7 @@ $(document).ready(function () {
 
             cartNumbers(products[index]);
             totalCost(products[index]);
-
+            addedtoCart(products[index]);
             function cartNumbers(products) {
                 let productNumbers = parseInt(localStorage.getItem('cartnumbers'));
                 if (productNumbers) {
@@ -42,9 +42,11 @@ $(document).ready(function () {
                 localStorage.setItem('cartnumbers', 1);
                 document.querySelector('.d-flex span').textContent = 1;
                 }
+                addedtoCart(products[index]);
             };
 
             function totalCost(products) {
+                
                 let cartCost = localStorage.getItem('totalCost');
                 
                 if(cartCost != null) {
@@ -54,21 +56,32 @@ $(document).ready(function () {
                     localStorage.setItem('totalCost', selectedClothingItem.price);
                 }
             }
+
+            function addedtoCart(products) {
+                console.log(selectedClothingItem);
+
+                selectedClothingItem.inCart = 1; 
+                localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
+                
+
+                
+            }
         });
 
-    };
-
-
-    function onLoadCartNumbers() {
-        let productNumbers = parseInt(localStorage.getItem('cartnumbers'));
-
-        if(productNumbers) {
-        document.querySelector('.d-flex span').textContent = productNumbers;
-    };
-};
+        function onLoadCartNumbers() {
+            let productNumbers = parseInt(localStorage.getItem('cartnumbers'));
     
+            if(productNumbers) {
+            document.querySelector('.d-flex span').textContent = productNumbers;
+        };
+        onLoadCartNumbers()
+
+        //User Interface
+
+        
+    };
 
 
-
-onLoadCartNumbers()
+ 
+};
 });

@@ -1,0 +1,10 @@
+.products-container {
+    max-height: 650px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.product-header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 4px solid #9D8DF1;
+}
