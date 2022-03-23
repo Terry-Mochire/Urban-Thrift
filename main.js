@@ -42,7 +42,7 @@ $(document).ready(function () {
                 localStorage.setItem('cartnumbers', 1);
                 document.querySelector('.d-flex span').textContent = 1;
                 }
-                addedtoCart(products[index]);
+               
             };
 
             function totalCost(products) {
@@ -55,7 +55,7 @@ $(document).ready(function () {
                 } else {
                     localStorage.setItem('totalCost', selectedClothingItem.price);
                 }
-            }
+            } addedtoCart(products[index]);
 
             function addedtoCart(products) {
                 console.log(selectedClothingItem);
@@ -63,6 +63,11 @@ $(document).ready(function () {
                 selectedClothingItem.inCart = 1; 
                 localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
                 
+                if(addedtoCart != null) {
+                    localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
+                } else {
+                    localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
+                }
 
                 
             }
