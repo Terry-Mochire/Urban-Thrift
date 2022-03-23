@@ -57,16 +57,16 @@ $(document).ready(function () {
                 }
             } addedtoCart(products[index]);
 
-            function addedtoCart(products) {
+            function addedtoCart(product) {
                 console.log(selectedClothingItem);
 
-                selectedClothingItem.inCart = 1; 
-                localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
+                product.inCart = 1; 
+                localStorage.setItem('addedtoCart', JSON.stringify(products));
                 
                 if(addedtoCart != null) {
-                    localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
+                    localStorage.setItem('addedtoCart', JSON.stringify(products));
                 } else {
-                    localStorage.setItem('addedtoCart', JSON.stringify(selectedClothingItem));
+                    localStorage.setItem('addedtoCart', JSON.stringify(products));
                 }
 
                 
@@ -82,11 +82,23 @@ $(document).ready(function () {
        
 
         //User Interface
-
         
     };
 
-    onLoadCartNumbers()
- 
+    
+    onLoadCartNumbers();
 };
+function displayCart() {
+    let cartItems = localStorage.getItem('addedtoCart');
+    let costOfItems = localStorage.getItem('totalCost')
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector(".product-container");
+    console.log(cartItems);
+    console.log(costOfItems);
+    document.getElementById('selectedtitle').innerHTML = cartItems.name;
+    document.getElementById('selectedprice').innerHTML = cartItems.price;
+    document.getElementById('selectedquantity').innerHTML = cartItems.inCart;
+
+
+}displayCart()
 });

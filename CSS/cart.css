@@ -8,3 +8,7 @@
     justify-content: space-around;
     border-bottom: 4px solid #9D8DF1;
 }
+.products{
+    display: flex;
+    justify-content: space-around;
+}
